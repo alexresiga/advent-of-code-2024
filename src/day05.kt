@@ -19,7 +19,7 @@ fun main() = day(true, "--- Day 5: Print Queue ---") { part, _ ->
             }
             Part.Two -> {
                 if (!ok) {
-                    list.sortWith { o1, o2 -> if (Pair(o1, o2) in order) -1 else 1 } // cool trick!
+                    list.sortWith { o1, o2 -> if (Pair(o1, o2) in order) -1 else 1 } // cool trick, i initially did bubble sort haha!
                     res += list[list.size / 2]
                 }
             }
