@@ -27,5 +27,6 @@ inline fun day(done: Boolean = false, name: String = "", block: (part: Part, inp
 }
 
 val DIRS = listOf((-1 to 0), (-1 to 1), (-1 to -1), (1 to -1), (1 to 0), (1 to 1), (0 to -1), (0 to 1))
+val DIRS2 = listOf(1 to 0, 0 to 1, -1 to 0, 0 to -1)
 
 val List<String>.grid get() = flatMapIndexed { i, line -> line.mapIndexed { j, c -> i to j to c } }.toMap()
